@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		F82ACDB2279C006A0059F9A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82ACDB1279C006A0059F9A3 /* AppDelegate.swift */; };
-		F82ACDB4279C006A0059F9A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82ACDB3279C006A0059F9A3 /* ViewController.swift */; };
+		F82ACDB4279C006A0059F9A3 /* MainWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82ACDB3279C006A0059F9A3 /* MainWindowViewController.swift */; };
 		F82ACDB6279C006D0059F9A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82ACDB5279C006D0059F9A3 /* Assets.xcassets */; };
-		F82ACDB9279C006D0059F9A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82ACDB7279C006D0059F9A3 /* Main.storyboard */; };
+		F82ACDC1279C00C70059F9A3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82ACDC0279C00C70059F9A3 /* main.swift */; };
+		F82ACDC3279C0DF40059F9A3 /* AppMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82ACDC2279C0DF40059F9A3 /* AppMenuBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F82ACDAE279C006A0059F9A3 /* macOSAppWithoutStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOSAppWithoutStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82ACDB1279C006A0059F9A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F82ACDB3279C006A0059F9A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F82ACDB3279C006A0059F9A3 /* MainWindowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowViewController.swift; sourceTree = "<group>"; };
 		F82ACDB5279C006D0059F9A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F82ACDB8279C006D0059F9A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F82ACDBA279C006D0059F9A3 /* macOSAppWithoutStoryboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOSAppWithoutStoryboard.entitlements; sourceTree = "<group>"; };
+		F82ACDC0279C00C70059F9A3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F82ACDC2279C0DF40059F9A3 /* AppMenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenuBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +54,12 @@
 		F82ACDB0279C006A0059F9A3 /* macOSAppWithoutStoryboard */ = {
 			isa = PBXGroup;
 			children = (
-				F82ACDB1279C006A0059F9A3 /* AppDelegate.swift */,
-				F82ACDB3279C006A0059F9A3 /* ViewController.swift */,
 				F82ACDB5279C006D0059F9A3 /* Assets.xcassets */,
-				F82ACDB7279C006D0059F9A3 /* Main.storyboard */,
 				F82ACDBA279C006D0059F9A3 /* macOSAppWithoutStoryboard.entitlements */,
+				F82ACDC0279C00C70059F9A3 /* main.swift */,
+				F82ACDB1279C006A0059F9A3 /* AppDelegate.swift */,
+				F82ACDB3279C006A0059F9A3 /* MainWindowViewController.swift */,
+				F82ACDC2279C0DF40059F9A3 /* AppMenuBar.swift */,
 			);
 			path = macOSAppWithoutStoryboard;
 			sourceTree = "<group>";
@@ -120,7 +123,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F82ACDB6279C006D0059F9A3 /* Assets.xcassets in Resources */,
-				F82ACDB9279C006D0059F9A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,23 +133,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F82ACDB4279C006A0059F9A3 /* ViewController.swift in Sources */,
+				F82ACDB4279C006A0059F9A3 /* MainWindowViewController.swift in Sources */,
 				F82ACDB2279C006A0059F9A3 /* AppDelegate.swift in Sources */,
+				F82ACDC3279C0DF40059F9A3 /* AppMenuBar.swift in Sources */,
+				F82ACDC1279C00C70059F9A3 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F82ACDB7279C006D0059F9A3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F82ACDB8279C006D0059F9A3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F82ACDBB279C006D0059F9A3 /* Debug */ = {
@@ -276,7 +269,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,7 +293,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
